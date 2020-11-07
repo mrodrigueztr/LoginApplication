@@ -86,7 +86,7 @@ public class FramePrincipal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jToolBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 261, Short.MAX_VALUE)
                 .addComponent(panelPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -155,17 +155,15 @@ public class FramePrincipal extends javax.swing.JFrame {
         usuarios.add(b);
         usuarios.add(c);
         
-        sistema.setUsuarios(usuarios);
+      sistema.setUsuarios(usuarios);
         
-        for(Usuario u: sistema.getUsuarios()){
+       for(Usuario u: sistema.getUsuarios()){      
                 System.out.println(u.getNombre());
                 System.out.println(u.getPassword());
                 System.out.println("------------");
-        
         }
-        
-        
     }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton IngresoB;
     private javax.swing.JButton RegistroB;
