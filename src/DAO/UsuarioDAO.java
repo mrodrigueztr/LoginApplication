@@ -49,8 +49,8 @@ public class UsuarioDAO {
     public Usuario leer (Usuario par){
         EntityManager em = emf.createEntityManager();
         Usuario usuario = null;
-        Query q = em.createNamedQuery("SELECT u FROM Usuario u " +
-                    "WHERE u.nombre LIKE :nombre" +
+        Query q = em.createQuery("SELECT u FROM Usuario u " +
+                    " WHERE u.nombre LIKE :nombre" +
                     " AND u.password LIKE :password")
                     .setParameter("nombre", par.getNombre())
                     .setParameter("password", par.getPassword());
